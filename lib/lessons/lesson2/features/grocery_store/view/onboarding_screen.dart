@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_colors.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_sizes.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_text_styles.dart';
-import 'package:it_space_lessons/lessons/lesson2/features/onboarding/models/onboarding_model.dart';
-import 'package:it_space_lessons/lessons/lesson2/features/onboarding/view/auth_welcome_screen.dart';
+import 'package:it_space_lessons/lessons/lesson2/features/grocery_store//models/onboarding_model.dart';
+import 'package:it_space_lessons/lessons/lesson2/features/grocery_store//view/auth_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});

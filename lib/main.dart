@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'lessons/lesson2/features/onboarding/view/onboarding_screen.dart';
+import 'lessons/lesson2/features/grocery_store//view/onboarding_screen.dart';
 
 void main() {
   runApp(HomePage());

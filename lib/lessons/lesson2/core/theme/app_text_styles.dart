@@ -6,7 +6,7 @@ class AppTextStyles {
   const AppTextStyles._();
   static TextStyle titleTextStyle = GoogleFonts.poppins(
     fontSize: 25,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
   );
   static TextStyle descriptionTextStyle = GoogleFonts.poppins(
     color: AppColors.grey,

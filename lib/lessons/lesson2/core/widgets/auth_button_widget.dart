@@ -4,15 +4,15 @@ class AuthButtonWidget extends StatelessWidget {
   final String? iconPath;
   final String text;
   final Color color;
-  final Color textColor;
+  final Color? textColor;
   final FontWeight textFontWeight;
-  void Function()? onPressed;
-  AuthButtonWidget({
+  final VoidCallback? onPressed;
+  const AuthButtonWidget({
     super.key,
     this.iconPath,
     required this.text,
     required this.color,
-    this.textColor = Colors.transparent,
+    this.textColor,
     required this.textFontWeight,
     required this.onPressed,
   });
@@ -22,7 +22,7 @@ class AuthButtonWidget extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: color,
-        maximumSize: Size(double.infinity, 60.0),
+        minimumSize: Size(double.infinity, 60.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
         ),
@@ -34,9 +34,7 @@ class AuthButtonWidget extends StatelessWidget {
           child: Row(
             children: [
               if (iconPath != null)
-                Image.asset(iconPath!, height: 24.0, width: 24.0)
-              else
-                const SizedBox(width: 24),
+                Image.asset(iconPath!, height: 24.0, width: 24.0),
               const Spacer(),
               Text(
                 text,

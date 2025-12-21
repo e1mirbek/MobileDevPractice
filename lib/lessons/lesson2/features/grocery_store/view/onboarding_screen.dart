@@ -3,7 +3,7 @@ import 'package:it_space_lessons/lessons/lesson2/core/theme/app_colors.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_sizes.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_text_styles.dart';
 import 'package:it_space_lessons/lessons/lesson2/features/grocery_store//models/onboarding_model.dart';
-import 'package:it_space_lessons/lessons/lesson2/features/grocery_store//view/auth_screen.dart';
+import 'package:it_space_lessons/lessons/lesson2/features/grocery_store//view/welcome_auth_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -69,16 +69,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           ),
                           const Spacer(),
-                          _text(
-                            text: contents[index].title,
-                            textStyle: AppTextStyles.titleTextStyle,
+                          Text(
+                            contents[index].title,
+                            style: AppTextStyles.titleTextStyle,
                           ),
                           const SizedBox(height: 12.0),
-                          _text(
-                            text: contents[index].description,
-                            textStyle: AppTextStyles.descriptionTextStyle,
+                          Text(
+                            contents[index].description,
+                            style: AppTextStyles.descriptionTextStyle,
                           ),
-                          SizedBox(height: AppSizes.bottomSpacing),
+                          SizedBox(height: AppSizes.sizedBox = 47.0),
                         ],
                       ),
                     );
@@ -97,6 +97,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   else
                     const SizedBox(width: 48.0),
                   const Spacer(),
+                  // indicator
                   Row(
                     children: List.generate(
                       contents.length,
@@ -125,10 +126,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  Text _text({required String text, required TextStyle textStyle}) {
-    return Text(text, style: textStyle);
-  }
-
   TextButton _textButton({
     required void Function()? onPressed,
     required String title,
@@ -149,8 +146,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       margin: const EdgeInsets.symmetric(horizontal: 5.0),
-      height: AppSizes.indicatorRadius * 2,
-      width: AppSizes.indicatorRadius * 2,
+      height: AppSizes.indicatorRadius = 16,
+      width: AppSizes.indicatorRadius = 16,
       decoration: BoxDecoration(color: color, shape: BoxShape.circle),
     );
   }

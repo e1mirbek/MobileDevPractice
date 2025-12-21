@@ -28,7 +28,7 @@ class OnboardingModel {
       imgPath: "assets/images/Passionate-cuate 1.png",
       title: "Enjoy Quality Food",
       description:
-          "Enjoy high-quality products and fresh food\n"
+          "Enjoy high-quality products\n and fresh food"
           "every day with comfort and ease\n",
     ),
   ];

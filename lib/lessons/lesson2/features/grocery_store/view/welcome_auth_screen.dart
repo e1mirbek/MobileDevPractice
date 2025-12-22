@@ -1,5 +1,6 @@
 import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
+import 'package:it_space_lessons/lessons/lesson2/core/constants/app_assets.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_colors.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/theme/app_text_styles.dart';
 import 'package:it_space_lessons/lessons/lesson2/core/widgets/auth_button_widget.dart';
@@ -24,7 +25,7 @@ class AuthWelcomeScreen extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          _backgroundImage(imagePath: "assets/images/beautiful.png"),
+          _backgroundImage(imagePath: AppAssets.beautiful),
           Align(
             alignment: Alignment.bottomCenter,
             child: _bottomContent(context),

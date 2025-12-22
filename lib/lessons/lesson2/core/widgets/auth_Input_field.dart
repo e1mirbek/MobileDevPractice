@@ -6,13 +6,17 @@ class AuthInputField extends StatelessWidget {
   final String hintText;
   final String iconPath;
   final Widget? suffixIcon;
+  final bool obscureText;
   final TextEditingController? controller;
+  final String? Function(String?)? validator;
   const AuthInputField({
     super.key,
     required this.hintText,
     required this.iconPath,
     this.suffixIcon,
     this.controller,
+    this.validator,
+    this.obscureText = false,
   });
 
   @override
@@ -26,7 +30,9 @@ class AuthInputField extends StatelessWidget {
       ),
       child: Center(
         child: TextFormField(
+          validator: validator,
           controller: controller,
+          obscureText: obscureText,
           textAlignVertical: TextAlignVertical.center,
           decoration: InputDecoration(
             isDense: true,

@@ -12,6 +12,10 @@ class AppTextStyles {
     color: AppColors.grey,
     fontSize: 15,
   );
+  static TextStyle forgotTextStyle = GoogleFonts.poppins(
+    color: AppColors.coolBlue,
+    fontSize: 15,
+  );
   static TextStyle welcomeTextStyle = GoogleFonts.poppins(
     color: AppColors.white,
     fontSize: 18.0,

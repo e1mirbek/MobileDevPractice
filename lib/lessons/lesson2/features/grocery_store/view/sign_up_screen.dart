@@ -149,7 +149,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 text: "Signup",
                 color: AppColors.green,
                 textColor: AppColors.white,
-                textFontWeight: FontWeight.w600,
                 onPressed: () => register(),
               ),
               const Spacer(),

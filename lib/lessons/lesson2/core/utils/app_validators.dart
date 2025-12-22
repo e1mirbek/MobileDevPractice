@@ -38,6 +38,8 @@ class AppValidators {
   static String? passwordValidate(String? value) {
     if (value == null || value.isEmpty) {
       return "Введите пароль !";
+    } else if (value.length < 6) {
+      return "Не менее 6 символов";
     }
     return null;
   }

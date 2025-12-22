@@ -5,7 +5,6 @@ class AuthButtonWidget extends StatelessWidget {
   final String text;
   final Color color;
   final Color? textColor;
-  final FontWeight textFontWeight;
   final VoidCallback? onPressed;
   const AuthButtonWidget({
     super.key,
@@ -13,7 +12,6 @@ class AuthButtonWidget extends StatelessWidget {
     required this.text,
     required this.color,
     this.textColor,
-    required this.textFontWeight,
     required this.onPressed,
   });
 
@@ -41,7 +39,7 @@ class AuthButtonWidget extends StatelessWidget {
                 style: TextStyle(
                   color: textColor,
                   fontSize: 15.0,
-                  fontWeight: textFontWeight,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
               const Spacer(),

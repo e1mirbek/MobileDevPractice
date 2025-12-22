@@ -70,7 +70,6 @@ class AuthWelcomeScreen extends StatelessWidget {
               text: "Continue with google",
               textColor: AppColors.black,
               color: AppColors.white,
-              textFontWeight: FontWeight.w500,
               onPressed: () => developer.log("open register with google"),
             ),
             const SizedBox(height: 12.0),
@@ -79,7 +78,6 @@ class AuthWelcomeScreen extends StatelessWidget {
               text: "Create an account",
               textColor: AppColors.white,
               color: AppColors.green,
-              textFontWeight: FontWeight.w700,
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SignUpScreen()),
